@@ -1,0 +1,187 @@
+/* CDF Brand Tokens - EXACT match to cdf.gov.sa live UI */
+
+/* Font System - Exact Match */
+:root {
+  --cdf-font-family: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", "Inter", sans-serif;
+  --cdf-font-weight-400: 400;
+  --cdf-font-weight-500: 500;
+  --cdf-font-weight-600: 600;
+  --cdf-font-weight-700: 700;
+}
+
+/* Color Palette - EXACT match to cdf.gov.sa */
+:root {
+  /* Background Colors */
+  --cdf-background: #FFFFFF;
+  --cdf-secondary: #F5F5F5;
+  
+  /* Text Colors */
+  --cdf-foreground: #111827;
+  --cdf-muted-foreground: #6B7280;
+  --cdf-secondary-foreground: #111827;
+  
+  /* Border & Divider */
+  --cdf-border: #E5E7EB;
+  --cdf-input-border: #D1D5DB;
+  
+  /* Brand Accent - LIMITED USE ONLY */
+  --cdf-primary: #000000;
+  --cdf-primary-foreground: #FFFFFF;
+  --cdf-ring: #000000;
+  
+  /* Disabled / Muted UI */
+  --cdf-disabled: #9CA3AF;
+  --cdf-placeholder: #9CA3AF;
+  
+  /* Legal / Informational Highlight */
+  --cdf-legal-bg: #F9FAFB;
+  --cdf-legal-border: #E5E7EB;
+  --cdf-legal-text: #374151;
+  
+  /* Warning / Legal Notice (NON-ALARMING) */
+  --cdf-warning-bg: #FFFBEB;
+  --cdf-warning-border: #FDE68A;
+  --cdf-warning-text: #92400E;
+  
+  /* Form Colors */
+  --cdf-input: #FFFFFF;
+  --cdf-input-focus: #0F3A2F;
+}
+
+/* Typography Scale - EXACT match to policy pages */
+:root {
+  /* Font Sizes - Desktop Reference */
+  --cdf-text-xs: 13px;
+  --cdf-text-sm: 14px;
+  --cdf-text-base: 16px;
+  --cdf-text-lg: 20px;
+  --cdf-text-xl: 24px;
+  --cdf-text-2xl: 32px;
+  --cdf-text-3xl: 36px;
+  
+  /* Line Heights - Policy page match */
+  --cdf-leading-tight: 1.5;
+  --cdf-leading-normal: 1.7;
+  --cdf-leading-relaxed: 1.8;
+}
+
+/* Spacing Scale */
+:root {
+  --cdf-space-1: 4px;
+  --cdf-space-2: 8px;
+  --cdf-space-3: 12px;
+  --cdf-space-4: 16px;
+  --cdf-space-5: 20px;
+  --cdf-space-6: 24px;
+  --cdf-space-8: 32px;
+  --cdf-space-10: 40px;
+  --cdf-space-12: 48px;
+  --cdf-space-16: 64px;
+  --cdf-space-20: 80px;
+}
+
+/* Border Radius - Subtle as per policy pages */
+:root {
+  --cdf-radius-sm: 4px;
+  --cdf-radius-md: 6px;
+  --cdf-radius-lg: 8px;
+  --cdf-radius-xl: 12px;
+}
+
+/* Layout - Policy page style */
+:root {
+  --cdf-container-max-width: 1200px;
+  --cdf-content-max-width: 1100px;
+}
+
+/* Component Tokens - Exact match to live UI */
+:root {
+  /* Button Tokens */
+  --cdf-button-height: 40px;
+  --cdf-button-padding-x: 24px;
+  --cdf-button-font-size: 14px;
+  --cdf-button-font-weight: var(--cdf-font-weight-500);
+  --cdf-button-radius: 0px;
+  
+  /* Primary Button */
+  --cdf-button-primary-bg: var(--cdf-primary);
+  --cdf-button-primary-text: var(--cdf-primary-foreground);
+  --cdf-button-primary-border: var(--cdf-primary);
+  --cdf-button-primary-hover-bg: #333333;
+  --cdf-button-primary-hover-text: var(--cdf-background);
+  
+  /* Secondary Button */
+  --cdf-button-secondary-bg: var(--cdf-background);
+  --cdf-button-secondary-text: var(--cdf-foreground);
+  --cdf-button-secondary-border: var(--cdf-input-border);
+  --cdf-button-secondary-hover-bg: var(--cdf-foreground);
+  --cdf-button-secondary-hover-text: var(--cdf-background);
+  
+  /* Disabled Button */
+  --cdf-button-disabled-bg: var(--cdf-disabled);
+  --cdf-button-disabled-text: var(--cdf-background);
+  --cdf-button-disabled-cursor: not-allowed;
+  
+  /* Input Tokens */
+  --cdf-input-height: 40px;
+  --cdf-input-padding-x: 12px;
+  --cdf-input-padding-y: 8px;
+  --cdf-input-font-size: 15px;
+  --cdf-input-border-width: 1px;
+  --cdf-input-bg: var(--cdf-input);
+  --cdf-input-border: var(--cdf-input-border);
+  --cdf-input-focus-border: var(--cdf-input-focus);
+  --cdf-input-placeholder: var(--cdf-placeholder);
+  
+  /* Card Tokens - Flat design, NO shadows */
+  --cdf-card-bg: var(--cdf-background);
+  --cdf-card-border: var(--cdf-border);
+  --cdf-card-radius: var(--cdf-radius-lg);
+  --cdf-card-shadow: none;
+  
+  /* Legal Callout Tokens */
+  --cdf-legal-callout-bg: var(--cdf-legal-bg);
+  --cdf-legal-callout-border: var(--cdf-legal-border);
+  --cdf-legal-callout-text: var(--cdf-legal-text);
+  
+  /* Warning Callout Tokens */
+  --cdf-warning-callout-bg: var(--cdf-warning-bg);
+  --cdf-warning-callout-border: var(--cdf-warning-border);
+  --cdf-warning-callout-text: var(--cdf-warning-text);
+  
+  /* Checkbox Tokens */
+  --cdf-checkbox-size: 16px;
+  --cdf-checkbox-checked: var(--cdf-primary);
+  --cdf-checkbox-border: var(--cdf-input-border);
+}
+
+/* NO shadows, NO gradients, NO decorative backgrounds */
+:root {
+  --cdf-shadow-sm: none;
+  --cdf-shadow-md: none;
+  --cdf-shadow-lg: none;
+  --cdf-shadow-xl: none;
+}
+
+/* Dark Mode Tokens (if needed) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cdf-background: #111827;
+    --cdf-foreground: #F9FAFB;
+    --cdf-muted: #1F2937;
+    --cdf-muted-foreground: #9CA3AF;
+    --cdf-border: #374151;
+    --cdf-input: #1F2937;
+  }
+}
+
+/* Print Tokens */
+@media print {
+  :root {
+    --cdf-background: #FFFFFF;
+    --cdf-foreground: #000000;
+    --cdf-muted: #F5F5F5;
+    --cdf-muted-foreground: #666666;
+    --cdf-border: #CCCCCC;
+  }
+}

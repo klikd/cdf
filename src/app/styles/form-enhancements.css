@@ -1,0 +1,373 @@
+/* Form Enhancements - CDF Whistleblowing Prototype */
+
+/* Progress Bar Styles */
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--cdf-border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--cdf-primary);
+  transition: width 0.3s ease;
+  width: 0%;
+}
+
+.progress-fill[data-progress="0"] { width: 0%; }
+.progress-fill[data-progress="1"] { width: 1%; }
+.progress-fill[data-progress="2"] { width: 2%; }
+.progress-fill[data-progress="3"] { width: 3%; }
+.progress-fill[data-progress="4"] { width: 4%; }
+.progress-fill[data-progress="5"] { width: 5%; }
+.progress-fill[data-progress="6"] { width: 6%; }
+.progress-fill[data-progress="7"] { width: 7%; }
+.progress-fill[data-progress="8"] { width: 8%; }
+.progress-fill[data-progress="9"] { width: 9%; }
+.progress-fill[data-progress="10"] { width: 10%; }
+.progress-fill[data-progress="11"] { width: 11%; }
+.progress-fill[data-progress="12"] { width: 12%; }
+.progress-fill[data-progress="13"] { width: 13%; }
+.progress-fill[data-progress="14"] { width: 14%; }
+.progress-fill[data-progress="15"] { width: 15%; }
+.progress-fill[data-progress="16"] { width: 16%; }
+.progress-fill[data-progress="17"] { width: 17%; }
+.progress-fill[data-progress="18"] { width: 18%; }
+.progress-fill[data-progress="19"] { width: 19%; }
+.progress-fill[data-progress="20"] { width: 20%; }
+.progress-fill[data-progress="21"] { width: 21%; }
+.progress-fill[data-progress="22"] { width: 22%; }
+.progress-fill[data-progress="23"] { width: 23%; }
+.progress-fill[data-progress="24"] { width: 24%; }
+.progress-fill[data-progress="25"] { width: 25%; }
+.progress-fill[data-progress="26"] { width: 26%; }
+.progress-fill[data-progress="27"] { width: 27%; }
+.progress-fill[data-progress="28"] { width: 28%; }
+.progress-fill[data-progress="29"] { width: 29%; }
+.progress-fill[data-progress="30"] { width: 30%; }
+.progress-fill[data-progress="31"] { width: 31%; }
+.progress-fill[data-progress="32"] { width: 32%; }
+.progress-fill[data-progress="33"] { width: 33%; }
+.progress-fill[data-progress="34"] { width: 34%; }
+.progress-fill[data-progress="35"] { width: 35%; }
+.progress-fill[data-progress="36"] { width: 36%; }
+.progress-fill[data-progress="37"] { width: 37%; }
+.progress-fill[data-progress="38"] { width: 38%; }
+.progress-fill[data-progress="39"] { width: 39%; }
+.progress-fill[data-progress="40"] { width: 40%; }
+.progress-fill[data-progress="41"] { width: 41%; }
+.progress-fill[data-progress="42"] { width: 42%; }
+.progress-fill[data-progress="43"] { width: 43%; }
+.progress-fill[data-progress="44"] { width: 44%; }
+.progress-fill[data-progress="45"] { width: 45%; }
+.progress-fill[data-progress="46"] { width: 46%; }
+.progress-fill[data-progress="47"] { width: 47%; }
+.progress-fill[data-progress="48"] { width: 48%; }
+.progress-fill[data-progress="49"] { width: 49%; }
+.progress-fill[data-progress="50"] { width: 50%; }
+.progress-fill[data-progress="51"] { width: 51%; }
+.progress-fill[data-progress="52"] { width: 52%; }
+.progress-fill[data-progress="53"] { width: 53%; }
+.progress-fill[data-progress="54"] { width: 54%; }
+.progress-fill[data-progress="55"] { width: 55%; }
+.progress-fill[data-progress="56"] { width: 56%; }
+.progress-fill[data-progress="57"] { width: 57%; }
+.progress-fill[data-progress="58"] { width: 58%; }
+.progress-fill[data-progress="59"] { width: 59%; }
+.progress-fill[data-progress="60"] { width: 60%; }
+.progress-fill[data-progress="61"] { width: 61%; }
+.progress-fill[data-progress="62"] { width: 62%; }
+.progress-fill[data-progress="63"] { width: 63%; }
+.progress-fill[data-progress="64"] { width: 64%; }
+.progress-fill[data-progress="65"] { width: 65%; }
+.progress-fill[data-progress="66"] { width: 66%; }
+.progress-fill[data-progress="67"] { width: 67%; }
+.progress-fill[data-progress="68"] { width: 68%; }
+.progress-fill[data-progress="69"] { width: 69%; }
+.progress-fill[data-progress="70"] { width: 70%; }
+.progress-fill[data-progress="71"] { width: 71%; }
+.progress-fill[data-progress="72"] { width: 72%; }
+.progress-fill[data-progress="73"] { width: 73%; }
+.progress-fill[data-progress="74"] { width: 74%; }
+.progress-fill[data-progress="75"] { width: 75%; }
+.progress-fill[data-progress="76"] { width: 76%; }
+.progress-fill[data-progress="77"] { width: 77%; }
+.progress-fill[data-progress="78"] { width: 78%; }
+.progress-fill[data-progress="79"] { width: 79%; }
+.progress-fill[data-progress="80"] { width: 80%; }
+.progress-fill[data-progress="81"] { width: 81%; }
+.progress-fill[data-progress="82"] { width: 82%; }
+.progress-fill[data-progress="83"] { width: 83%; }
+.progress-fill[data-progress="84"] { width: 84%; }
+.progress-fill[data-progress="85"] { width: 85%; }
+.progress-fill[data-progress="86"] { width: 86%; }
+.progress-fill[data-progress="87"] { width: 87%; }
+.progress-fill[data-progress="88"] { width: 88%; }
+.progress-fill[data-progress="89"] { width: 89%; }
+.progress-fill[data-progress="90"] { width: 90%; }
+.progress-fill[data-progress="91"] { width: 91%; }
+.progress-fill[data-progress="92"] { width: 92%; }
+.progress-fill[data-progress="93"] { width: 93%; }
+.progress-fill[data-progress="94"] { width: 94%; }
+.progress-fill[data-progress="95"] { width: 95%; }
+.progress-fill[data-progress="96"] { width: 96%; }
+.progress-fill[data-progress="97"] { width: 97%; }
+.progress-fill[data-progress="98"] { width: 98%; }
+.progress-fill[data-progress="99"] { width: 99%; }
+.progress-fill[data-progress="100"] { width: 100%; }
+
+/* Field Group Styles */
+.field-group {
+  position: relative;
+}
+
+.field-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.char-count {
+  margin-left: auto;
+  font-size: 0.75rem;
+  color: var(--cdf-muted-foreground);
+}
+
+.field-help {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-top: 0.25rem;
+}
+
+/* Form Section Styles */
+.form-section {
+  space-y: 1.5rem;
+}
+
+/* Enhanced Select Styles */
+.enhanced-select .select-trigger {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--cdf-input-border);
+  border-radius: var(--cdf-radius-md);
+  background-color: var(--cdf-input-bg);
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.2s ease;
+}
+
+.enhanced-select .select-trigger:focus {
+  outline: none;
+  border-color: var(--cdf-input-focus);
+  box-shadow: 0 0 0 1px var(--cdf-input-focus);
+}
+
+.enhanced-content .select-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.enhanced-content .select-item:hover {
+  background-color: var(--cdf-legal-callout-bg);
+}
+
+.option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.option-title {
+  font-weight: 500;
+  color: var(--cdf-foreground);
+}
+
+.option-description {
+  font-size: 0.75rem;
+  color: var(--cdf-muted-foreground);
+}
+
+/* Input Field Enhancements */
+.form-input {
+  width: 100%;
+  min-height: 40px;
+  border: 1px solid var(--cdf-input-border);
+  border-radius: var(--cdf-radius-md);
+  background-color: var(--cdf-input-bg);
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--cdf-input-focus);
+  box-shadow: 0 0 0 1px var(--cdf-input-focus);
+}
+
+.form-input:hover {
+  border-color: var(--cdf-border);
+}
+
+/* Field Focus Indicator */
+.field-focus-indicator {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--cdf-primary);
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+.field-focus-indicator.active {
+  transform: scaleX(1);
+}
+
+/* Privacy Toggle Styles */
+.privacy-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--cdf-border);
+  border-radius: var(--cdf-radius-lg);
+  background-color: var(--cdf-legal-callout-bg);
+  transition: all 0.3s ease;
+}
+
+.privacy-toggle.active {
+  border-color: var(--cdf-primary);
+  background-color: var(--cdf-background);
+}
+
+.toggle-switch {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--cdf-border);
+  transition: 0.3s;
+  border-radius: 24px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .toggle-slider {
+  background-color: var(--cdf-primary);
+}
+
+.toggle-switch input:checked + .toggle-slider:before {
+  transform: translateX(24px);
+}
+
+.toggle-content h4 {
+  font-weight: 600;
+  color: var(--cdf-foreground);
+  margin-bottom: 0.25rem;
+}
+
+.toggle-content p {
+  font-size: 0.875rem;
+  color: var(--cdf-muted-foreground);
+  line-height: 1.4;
+}
+
+/* Step Navigation Styles */
+.step-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.step-progress {
+  width: 100%;
+  height: 6px;
+  background-color: var(--cdf-border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--cdf-primary);
+  transition: width 0.3s ease;
+}
+
+.step-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Error and Validation Styles */
+.field-error {
+  color: var(--cdf-error-text);
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.field-success {
+  color: var(--cdf-success-text);
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.form-input.error {
+  border-color: var(--cdf-error-border);
+}
+
+.form-input.success {
+  border-color: var(--cdf-success-border);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .field-label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .char-count {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+  
+  .step-actions {
+    flex-direction: column;
+  }
+  
+  .privacy-toggle {
+    flex-direction: column;
+    text-align: center;
+  }
+}
