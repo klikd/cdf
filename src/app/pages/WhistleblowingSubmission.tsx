@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
@@ -36,6 +36,7 @@ interface FormData {
 }
 
 export default function WhistleblowingSubmission() {
+  const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -121,9 +122,8 @@ export default function WhistleblowingSubmission() {
     if (!consentChecked) return;
     
     // Validate minimum word count for description
-    const wordCount = countWords(formData.description);
-    if (wordCount < 100) {
-      alert(`الوصف يجب أن يحتوي على 100 كلمة على الأقل. الوصف الحالي يحتوي على ${wordCount} كلمة فقط.`);
+    if (countWords(formData.description) < 100) {
+      alert("يرجى كتابة وصف مفصل للواقعة (100 كلمة على الأقل)");
       return;
     }
     
@@ -137,8 +137,8 @@ export default function WhistleblowingSubmission() {
       const refNumber = generateReferenceNumber();
       setIsSubmitting(false);
       
-      // Redirect to confirmation page with reference number
-      window.location.href = `/confirmation?ref=${refNumber}`;
+      // Navigate to confirmation page with reference number
+      navigate(`/confirmation?ref=${refNumber}`);
     }, 2000);
   };
 
@@ -454,14 +454,13 @@ export default function WhistleblowingSubmission() {
                 <div>
                   <p className="text-base text-[var(--cdf-muted-foreground)]">
                     أقرّ بموجب هذا بأن المعلومات الواردة في هذا البلاغ صحيحة ودقيقة حسب علمي واعتقادي، وأنني أقدّم البلاغ بحسن نية ودون قصد الإساءة أو الإضرار، وأوافق على معالجة البلاغ والبيانات المرتبطة به وفق الأنظمة ذات العلاقة و
-                    <a 
-                      href={`/policy?returnToStep=${currentStep}`} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
+                    <Link 
+                      to={`/policy?returnToStep=${currentStep}`}
+                      target="_blank"
                       className="underline hover:text-[var(--cdf-primary)] transition-colors"
                     >
-                      سياسة الإبلاغ عن المخالفات المعتمدة 
-                    </a>
+                      سياسة الإبلاغ عن المخالفات
+                    </Link>
                        لدى صندوق التنمية الثقافي.
                   </p>
                 </div>

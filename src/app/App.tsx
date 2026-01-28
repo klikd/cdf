@@ -1,23 +1,29 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Toaster } from "sonner";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import WhistleblowingSubmission from "./pages/WhistleblowingSubmission";
+import { WhistleblowingPolicy } from "./pages/WhistleblowingPolicy";
+import WhistleblowingConfirmation from "./pages/WhistleblowingConfirmation";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white" dir="rtl">
-      <header className="border-b border-gray-200 bg-white p-4">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-xl font-bold text-gray-900">نظام الإبلاغ عن المخالفات</h1>
-        </div>
-      </header>
-      
-      <main className="max-w-4xl mx-auto p-4">
-        <WhistleblowingSubmission />
-      </main>
-      
-      <footer className="border-t border-gray-200 bg-white p-4 mt-8">
-        <div className="max-w-4xl mx-auto text-center text-gray-600">
-          <p>© 2026 الصندوق الثقافي للتنمية - جميع الحقوق محفوظة</p>
-        </div>
-      </footer>
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white" dir="rtl">
+        <Header />
+        
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<WhistleblowingSubmission />} />
+            <Route path="/policy" element={<WhistleblowingPolicy />} />
+            <Route path="/confirmation" element={<WhistleblowingConfirmation />} />
+            <Route path="*" element={<WhistleblowingSubmission />} />
+          </Routes>
+        </main>
+        
+        <Footer />
+        <Toaster position="top-center" dir="rtl" />
+      </div>
+    </Router>
   );
 }
