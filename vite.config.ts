@@ -20,10 +20,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    rollupOptions: {
-      output: {
-        entryFileNames: 'assets/[name]-[hash].[ext]'
-      }
-    }
   },
 })
