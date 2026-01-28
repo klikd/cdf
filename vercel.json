@@ -6,6 +6,10 @@
   "framework": "vite",
   "rewrites": [
     {
+      "source": "/whistleblowing.html",
+      "destination": "/whistleblowing.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
