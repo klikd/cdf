@@ -10,7 +10,7 @@
       "destination": "/whistleblowing.html"
     },
     {
-      "source": "/((?!whistleblowing\\.html).*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
