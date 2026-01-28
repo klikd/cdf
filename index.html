@@ -4,92 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CDF Whistleblowing Prototype</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-        background: #f5f5f5;
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      }
-      .status {
-        padding: 15px;
-        margin: 10px 0;
-        border-radius: 5px;
-      }
-      .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-      .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-      .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
-    </style>
   </head>
 
   <body>
-    <div id="root">
-      <div class="container">
-        <h1 style="color: #2c3e50; text-align: center;">🚨 CDF Whistleblowing System - Emergency Mode</h1>
-        
-        <div class="status success">
-          <strong>✅ HTML Loading:</strong> Successfully loaded
-        </div>
-        
-        <div class="status warning">
-          <strong>⚠️ JavaScript Status:</strong> <span id="js-status">Testing...</span>
-        </div>
-        
-        <div class="status error">
-          <strong>🔴 Issue:</strong> JavaScript modules not executing properly
-        </div>
-        
-        <div style="margin: 20px 0; padding: 20px; background: #e9ecef; border-radius: 5px;">
-          <h3>🔍 Diagnosis Information:</h3>
-          <p><strong>Current Time:</strong> <span id="time">Loading...</span></p>
-          <p><strong>User Agent:</strong> <span id="ua">Loading...</span></p>
-          <p><strong>URL:</strong> <span id="url">Loading...</span></p>
-        </div>
-        
-        <div style="margin: 20px 0; padding: 15px; background: #d1ecf1; border-radius: 5px;">
-          <h3>📋 Emergency Contact Form:</h3>
-          <form style="margin-top: 15px;">
-            <div style="margin: 10px 0;">
-              <label style="display: block; margin-bottom: 5px; font-weight: bold;">الاسم (Name):</label>
-              <input type="text" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" placeholder="أدخل اسمك">
-            </div>
-            <div style="margin: 10px 0;">
-              <label style="display: block; margin-bottom: 5px; font-weight: bold;">البريد الإلكتروني (Email):</label>
-              <input type="email" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" placeholder="example@email.com">
-            </div>
-            <div style="margin: 10px 0;">
-              <label style="display: block; margin-bottom: 5px; font-weight: bold;">البلاغ (Report):</label>
-              <textarea style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; min-height: 100px;" placeholder="صف البلاغ بالتفصيل..."></textarea>
-            </div>
-            <button type="submit" style="background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">إرسال البلاغ</button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      // Emergency inline JavaScript - no modules
-      console.log('Emergency: Inline JavaScript executing');
-      
-      document.getElementById('js-status').innerHTML = '✅ JavaScript Working (Inline)';
-      document.getElementById('time').innerHTML = new Date().toLocaleString();
-      document.getElementById('ua').innerHTML = navigator.userAgent.substring(0, 100) + '...';
-      document.getElementById('url').innerHTML = window.location.href;
-      
-      // Test form submission
-      document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('تم استلام البلاغ - سيتم المعالجة لاحقاً\nReport received - will be processed later');
-      });
-      
-      console.log('Emergency: All inline JavaScript executed successfully');
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
