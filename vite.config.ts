@@ -19,6 +19,6 @@ export default defineConfig({
   base: '/whistleblowing-prototype/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
+    assetsDir: 'static',
   },
 })
