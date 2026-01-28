@@ -16,7 +16,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-  base: '/',
+  base: '/whistleblowing-prototype/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
